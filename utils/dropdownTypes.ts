@@ -20,6 +20,7 @@ export const themes: themeType[] = [
   "Tropical",
   "Vintage",
 ];
+
 export const rooms: roomType[] = [
   "Living Room",
   "Dining Room",

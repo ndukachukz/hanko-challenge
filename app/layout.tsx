@@ -1,6 +1,9 @@
+import "../styles/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
-import "../styles/globals.css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import { AppProvider } from "../context";
 
 let title = "Dream Room Generator";
 let description = "Generate your dream room in seconds.";
@@ -37,9 +40,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#17181C] text-white">
-        {children}
-        <Analytics />
+      <body className="bg-[#17181C] text-white flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
+        <AppProvider>
+          <Header />
+          {children}
+          <Footer />
+
+          <Analytics />
+        </AppProvider>
       </body>
     </html>
   );

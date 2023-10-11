@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useAppState } from "../context";
 
-export function useUser() {
+/* export function useUser() {
   const [appState, setAppState] = useAppState();
 
   useEffect(() => {
@@ -17,3 +17,4 @@ export function useUser() {
 
   return appState.userId;
 }
+ */

@@ -1,5 +1,5 @@
 "use client";
-import { Hanko } from "@teamhanko/hanko-elements";
+import { Hanko, register } from "@teamhanko/hanko-elements";
 import React, {
   Dispatch,
   ReactNode,

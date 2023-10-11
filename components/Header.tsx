@@ -28,14 +28,15 @@ export default function Header() {
   };
 
   useEffect(() => {
-    appState.hanko?.user
-      .getCurrent()
-      .then((user) => {
-        setAppState((state) => ({ ...state, userId: user.id }));
-      })
-      .catch((userError) => {
-        console.log("GET LOGGED IN USER ERROR => ", userError.message);
-      });
+    if (appState.hanko?.user)
+      appState.hanko?.user
+        .getCurrent()
+        .then((user) => {
+          setAppState((state) => ({ ...state, userId: user.id }));
+        })
+        .catch((userError) => {
+          console.log("GET LOGGED IN USER ERROR => ", userError.message);
+        });
   }, [appState.hanko]);
 
   useEffect(() => {

@@ -9,7 +9,7 @@ It uses an ML model called [ControlNet](https://github.com/lllyasviel/ControlNet
 ### Cloning the repository on your local machine.
 
 ```bash
-git clone https://github.com/ndukachuks/hanko-challenge-nextjs
+git clone https://github.com/ndukachuks/hanko-challenge
 ```
 
 ### Creating an account on Replicate to get an API key.

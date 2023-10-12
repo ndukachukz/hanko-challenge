@@ -28,18 +28,6 @@ export default function Header() {
   };
 
   useEffect(() => {
-    if (appState.hanko?.user)
-      appState.hanko?.user
-        .getCurrent()
-        .then((user) => {
-          setAppState((state) => ({ ...state, userId: user.id }));
-        })
-        .catch((userError) => {
-          console.log("GET LOGGED IN USER ERROR => ", userError.message);
-        });
-  }, [appState.hanko]);
-
-  useEffect(() => {
     register(hankoApi).catch((error) => {
       // handle error
       console.log("HANKO AUTH ERROR => ", error);

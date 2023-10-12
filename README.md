@@ -19,7 +19,13 @@ git clone https://github.com/ndukachuks/hanko-challenge
 3. Here you can find your API token. Copy it.
 
 ### Creating an account on Supabase to get an API key.
-1. Go to [Supabase NextJS Guide](https://supabase.com/docs/guides/getting-started/quickstarts/nextjs)
+
+1. Go to [Supabase NextJS Guide](https://supabase.com/docs/guides/getting-started/quickstarts/nextjs).
+
+### Creating an account on Hanko to get an API key.
+
+1. Go to [Hanko Cloud Setup Guide](https://docs.hanko.io/setup-hanko-cloud).
+2. [Nextjs Guide](https://docs.hanko.io/quickstarts/fullstack/next)
 
 ### Storing the API keys in .env
 
@@ -32,7 +38,9 @@ If you'd also like to do rate limiting, create an account on UpStash, create a R
 ```bash
 npm install
 ```
-or 
+
+or
+
 ```bash
 npm i
 ```

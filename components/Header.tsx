@@ -27,6 +27,16 @@ export default function Header() {
     }
   };
 
+  // checks if user is logged in and sets the user ID on page refresh/rerender
+  useEffect(() => {
+    if (appState.hanko?.session.isValid()) {
+      setAppState((state) => ({
+        ...state,
+        userId: appState.hanko?.session.get().userID,
+      }));
+    }
+  }, [appState.hanko]);
+
   useEffect(() => {
     register(hankoApi).catch((error) => {
       // handle error
